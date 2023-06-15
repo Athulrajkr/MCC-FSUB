@@ -1940,15 +1940,7 @@ async def global_filters(client, message, text=False):
                                     if settings['auto_ffilter']:
                                         await auto_filter(client, message) 
                             else:
-                                try:
-                                    if settings['auto_delete']:
-                                        await joelkb.delete()
-                                except KeyError:
-                                    grpid = await active_connection(str(message.from_user.id))
-                                    await save_group_settings(grpid, 'auto_delete', True)
-                                    settings = await get_settings(message.chat.id)
-                                    if settings['auto_delete']:
-                                        await joelkb.delete()
+                                await joelkb.delete()
 
                     elif btn == "[]":
                         joelkb = await client.send_cached_media(
