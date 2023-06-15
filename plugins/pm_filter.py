@@ -1867,6 +1867,8 @@ async def global_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                             )
+                            await asyncio.sleep(600)
+                            await joelkb.delete()
                             manual = await manual_filters(client, message)
                             if manual == False:
                                 settings = await get_settings(message.chat.id)
