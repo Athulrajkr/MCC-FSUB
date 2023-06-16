@@ -2034,6 +2034,8 @@ async def global_filters(client, message, text=False):
                                 settings = await get_settings(message.chat.id)
                                 if settings['auto_ffilter']:
                                     await auto_filter(client, message) 
+                                    await asyncio.sleep(10)
+                                    await joelkb.delete()
                         else:
                             try:
                                 if settings['auto_delete']:
