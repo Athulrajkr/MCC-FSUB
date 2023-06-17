@@ -11,10 +11,10 @@ async def approve(bot, m: Message):
         if m.chat.id == AUTH_CHANNEL:
             return
             
-        if not await db.get_chat(message.chat.id):
+        if not await db.get_chat(m.chat.id):
             await db.add_chat(m.chat.id, m.chat.title) 
             
-        await bot.approve_chat_join_request(message.chat.id, m.from_user.id)
+        await bot.approve_chat_join_request(m.chat.id, m.from_user.id)
         await bot.send_message(m.from_user.id, "Hello {}\nWelcome To {}".format(m.from_user.mention, m.chat.title))
         
         if not await db.is_user_exist(m.from_user.id):
