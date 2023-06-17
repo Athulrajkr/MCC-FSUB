@@ -1,10 +1,10 @@
-from pyrogram.types import ChatJoinRequest
+from pyrogram.types import Message
 from pyrogram import filters, Client, errors, enums
 from database.users_chats_db import db
 
 
 @Client.on_chat_join_request(filters.group | filters.channel)
-async def approve(bot, m: ChatJoinRequest):
+async def approve(bot, m: Message):
     try: 
         if not await db.get_chat(message.chat.id):
             await db.add_chat(m.chat.id, m.chat.title) 
