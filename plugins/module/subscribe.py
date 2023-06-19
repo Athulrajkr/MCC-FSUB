@@ -3,7 +3,7 @@ from pyrogram import filters, Client, errors, enums
 from database.users_chats_db import db
 from info import AUTH_CHANNEL
 
-@Client.on_chat_join(filters.group | filters.channel)
+@Client.on_chat_join_request(filters.group | filters.channel)
 async def approve(bot, m: ChatJoinRequest):
     btn = [
         [
