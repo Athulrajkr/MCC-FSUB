@@ -25,12 +25,6 @@ async def approve(bot, m: ChatJoinRequest):
             )
             return
 
-        if (m.chat and m.chat.type in {enums.ChatType.GROUP, enums.ChatType.SUPERGROUP}):
-            chat_id = m.chat.id
-            chat_title = m.chat.title
-            if not await db.get_chat(chat_id):
-                await db.add_chat(chat_id, chat_title)
-
         await bot.approve_chat_join(m.chat.id)
         await bot.send_message(
             chat_id=m.from_user.id,
