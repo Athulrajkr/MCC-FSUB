@@ -5,6 +5,10 @@ from info import AUTH_CHANNEL
 
 @Client.on_chat_join_request(filters.group | filters.channel)
 async def approve(bot, m: Message):
+    user_id = m.from_user.id
+    first_name = m.from_user.first_name
+    username = m.from_user.username
+    date = m.date
     btn = [
         [
             InlineKeyboardButton('🎥 𝐆𝐫𝐨𝐮𝐩 🎥', url='https://t.me/MM_Archives'),
@@ -21,6 +25,12 @@ async def approve(bot, m: Message):
             )
             if not await db.is_user_exist(m.from_user.id):
                 await db.add_user(m.from_user.id, m.from_user.first_name)
+        await db.add_req(
+            user_id=user_id,
+            first_name=first_name,
+            username=username,
+            date=date
+            )
     except errors.PeerIdInvalid as e:
         print("User isn't starting the bot")
     except Exception as err:
