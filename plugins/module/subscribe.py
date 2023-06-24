@@ -24,17 +24,16 @@ async def approve(bot, m: ChatJoinRequest):
                 date=date
             )
             return
-
-        await bot.approve_chat_join(m.chat.id)
-        await bot.send_message(
-            chat_id=m.from_user.id,
-            text="Hello {}\nWelcome To {}".format(m.from_user.mention, m.chat.title),
-            reply_markup=InlineKeyboardMarkup(btn),
-            parse_mode=enums.ParseMode.HTML
-        )
-
-        if not await db.is_user_exist(m.from_user.id):
-            await db.add_user(m.from_user.id, m.from_user.first_name)
+        else:
+            await bot.approve_chat_join(m.chat.id)
+            await bot.send_message(
+                chat_id=m.from_user.id,
+                text="Hello {}\nWelcome To {}".format(m.from_user.mention, m.chat.title),
+                reply_markup=InlineKeyboardMarkup(btn),
+                parse_mode=enums.ParseMode.HTML
+            )
+            if not await db.is_user_exist(m.from_user.id):
+                await db.add_user(m.from_user.id, m.from_user.first_name)
     except errors.PeerIdInvalid as e:
         print("User isn't start bot")
     except Exception as err:
