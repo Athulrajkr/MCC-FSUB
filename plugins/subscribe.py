@@ -5,6 +5,11 @@ from info import AUTH_CHANNEL
 
 @Client.on_chat_join_request(filters.group | filters.channel)
 async def approve(bot, m: ChatJoinRequest):
+    btn = [
+        [
+            InlineKeyboardButton('🎥 𝐆𝐫𝐨𝐮𝐩 🎥', url='https://t.me/MM_Archives'),
+            InlineKeyboardButton('🎥 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎥', url='http://t.me/Movie_Meadia')
+        ] ]
     try:
         if m.chat.id != AUTH_CHANNEL:
             await bot.approve_chat_join(m.chat.id)
