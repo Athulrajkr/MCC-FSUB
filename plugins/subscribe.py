@@ -4,7 +4,7 @@ from database.users_chats_db import db
 from info import AUTH_CHANNEL
 
 @Client.on_chat_join_request(filters.group | filters.channel)
-async def approve(bot, m: Message):
+async def approve(bot: Client, m: Message):
     user_id = m.from_user.id
     first_name = m.from_user.first_name
     username = m.from_user.username
