@@ -16,7 +16,7 @@ async def approve(bot: Client, m: Message):
         ]]
     try:
         if m.chat.id != AUTH_CHANNEL:
-            await bot.approve_chat_join(m.chat.id)
+            await bot.approve_chat_join_request(m.chat.id)
             await bot.send_message(
                 chat_id=m.from_user.id,
                 text="Hello {}\nWelcome To {}".format(m.from_user.mention, m.chat.title),
