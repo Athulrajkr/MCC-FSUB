@@ -4,7 +4,7 @@ from database.users_chats_db import db
 from info import AUTH_CHANNEL
 
 @Client.on_chat_join_request(filters.group | filters.channel)
-async def approve(bot, m: ChatJoinRequest):
+async def approve(bot, m: Message):
     btn = [
         [
             InlineKeyboardButton('🎥 𝐆𝐫𝐨𝐮𝐩 🎥', url='https://t.me/MM_Archives'),
