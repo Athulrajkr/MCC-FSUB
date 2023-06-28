@@ -271,7 +271,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton("🎦  𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃  🎦", url="t.me/MM_DVD_UPDATES")
+        InlineKeyboardButton("🎖 𝐍𝐄𝐖 𝐑𝐄𝐋𝐄𝐀𝐒𝐄 𝐔𝐏𝐃𝐀𝐓𝐄 🎖", url="t.me/MM_DVD_UPDATES")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -1441,7 +1441,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("🎦  𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃  🎦", url="t.me/MM_DVD_UPDATES")
+        InlineKeyboardButton("🎖 𝐍𝐄𝐖 𝐑𝐄𝐋𝐄𝐀𝐒𝐄 𝐔𝐏𝐃𝐀𝐓𝐄 🎖", url="t.me/MM_DVD_UPDATES")
     ])
 
     if offset != "":
