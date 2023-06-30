@@ -19,7 +19,7 @@ async def approve(bot: Client, m: Message):
             await bot.approve_chat_join_request(m.chat.id, user_id)
             await bot.send_message(
                 chat_id=m.from_user.id,
-                text="Hello {}\nWelcome To {}".format(m.from_user.mention, m.chat.title),
+                text="Hello {}\n\n Your Request to Join{} has been Approved \n\n Send /start to know more".format(m.from_user.mention, m.chat.title)
                 reply_markup=InlineKeyboardMarkup(btn),
                 parse_mode=enums.ParseMode.HTML
             )
