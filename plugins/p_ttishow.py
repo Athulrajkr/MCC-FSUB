@@ -58,7 +58,7 @@ async def save_group(bot, message):
                         pass
                 temp.MELCOW['welcome'] = await message.reply_text(text="hello", reply_markup=buttoncode)
                                                  
-                                                 caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
+                                                 
                                                  reply_markup=InlineKeyboardMarkup(
                                                  
                                                  
