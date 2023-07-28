@@ -56,12 +56,10 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply_text(text="hello", reply_markup=buttoncode)
-                                                 
-                                                 
+                temp.MELCOW['welcome'] = await message.reply_video(
+                                                 video=(MELCOW_VID),
+                                                 caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
-                                                 
-                                                 
                                                                          [[
                                                                            InlineKeyboardButton('🎥 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🎥', url=GRP_LNK),
                                                                            InlineKeyboardButton('🎥 𝐌𝐨𝐯𝐢𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎥', url=CHNL_LNK)
