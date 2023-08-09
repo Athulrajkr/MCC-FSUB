@@ -22,7 +22,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url="t.me/MMFilimBot?startgroup=true")
+                    InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url="https://t.me/MMFilimBot?startgroup&admin=delete_messages+invite_users")
                 ],[
                     InlineKeyboardButton('⚒ 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 ⚒', callback_data="owner_info"),
                     InlineKeyboardButton('🎥 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🎥', url=GRP_LNK)
@@ -46,7 +46,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url="t.me/MMFilimBot?startgroup=true")
+                    InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url="https://t.me/MMFilimBot?startgroup&admin=delete_messages+invite_users")
                 ],[
                     InlineKeyboardButton('⚒ 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 ⚒', callback_data="owner_info"),
                     InlineKeyboardButton('🎥 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🎥', url=GRP_LNK)
@@ -98,7 +98,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url="t.me/MMFilimBot?startgroup=true")
+                    InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url="https://t.me/MMFilimBot?startgroup&admin=delete_messages+invite_users")
                 ],[
                     InlineKeyboardButton('⚒ 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 ⚒', callback_data="owner_info"),
                     InlineKeyboardButton('🎥 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🎥', url=GRP_LNK)
