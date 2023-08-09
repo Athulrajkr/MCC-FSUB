@@ -946,7 +946,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url="t.me/MMFilimBot?startgroup=true")
+                    InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url="https://t.me/MMFilimBot?startgroup&admin=delete_messages+invite_users")
                 ],[
                     InlineKeyboardButton('⚒ 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 ⚒', callback_data="owner_info"),
                     InlineKeyboardButton('🎥 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🎥', url=GRP_LNK)
