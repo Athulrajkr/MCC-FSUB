@@ -271,7 +271,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton("🎖 𝐍𝐄𝐖 𝐑𝐄𝐋𝐄𝐀𝐒𝐄 𝐔𝐏𝐃𝐀𝐓𝐄 🎖", url="t.me/MM_DVD_UPDATES")
+        InlineKeyboardButton("➕ 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 ➕", url="https://t.me/MMFilimBot?startgroup&admin=delete_messages+invite_users")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -1441,7 +1441,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("🎖 𝐍𝐄𝐖 𝐑𝐄𝐋𝐄𝐀𝐒𝐄 𝐔𝐏𝐃𝐀𝐓𝐄 🎖", url="t.me/MM_DVD_UPDATES")
+        InlineKeyboardButton("➕ 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 ➕", url="https://t.me/MMFilimBot?startgroup&admin=delete_messages+invite_users")
     ])
 
     if offset != "":
