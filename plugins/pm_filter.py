@@ -63,7 +63,7 @@ async def pm_text(bot, message):
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
-    await message.reply_text("<b>ഇവിടെ മെസ്സേജ് അയച്ചാൽ മൂവി കിട്ടില്ല മൂവി കിട്ടാൻ ഗ്രൂപ്പിൽ ജോയിൻ ചെയ്യുക @MM_Archives</b>")
+    await message.reply_text("<b>ഇവിടെ മെസ്സേജ് അയച്ചാൽ മൂവി കിട്ടില്ല മൂവി കിട്ടാൻ ഗ്രൂപ്പിൽ ജോയിൻ ചെയ്യുക @MCC_OTT</b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
