@@ -27,7 +27,7 @@ async def save_group(bot, message):
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
-                text='<b>CHAT NOT ALLOWED 🐞\n\nMy admins has restricted me from working here ! If you want to know more about it contact @MMAssistBot..</b>',
+                text='<b>CHAT NOT ALLOWED 🐞\n\nMy admins has restricted me from working here ! If you want to know more about it contact @MccAssistBot..</b>',
                 reply_markup=reply_markup,
             )
 
@@ -41,7 +41,7 @@ async def save_group(bot, message):
                     InlineKeyboardButton('🎥 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🎥', url=GRP_LNK),
                     InlineKeyboardButton('🎥 𝐌𝐨𝐯𝐢𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎥', url=CHNL_LNK)
                  ],[
-                    InlineKeyboardButton("📀 𝐍𝐞𝐰 𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐔𝐩𝐝𝐚𝐭𝐞 📀", url="https://t.me/MM_DVD_UPDATES")
+                    InlineKeyboardButton("📀 𝐍𝐞𝐰 𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐔𝐩𝐝𝐚𝐭𝐞 📀", url="t.me/DVD_OTT_UPDATES_CHANNEL")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -64,7 +64,7 @@ async def save_group(bot, message):
                                                                            InlineKeyboardButton('🎥 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🎥', url=GRP_LNK),
                                                                            InlineKeyboardButton('🎥 𝐌𝐨𝐯𝐢𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎥', url=CHNL_LNK)
                                                                         ],[
-                                                                           InlineKeyboardButton("📀 𝐍𝐞𝐰 𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐔𝐩𝐝𝐚𝐭𝐞 📀", url="https://t.me/MM_DVD_UPDATES")
+                                                                           InlineKeyboardButton("📀 𝐍𝐞𝐰 𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐔𝐩𝐝𝐚𝐭𝐞 📀", url="t.me/DVD_OTT_UPDATES_CHANNEL")
                                                                          ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
