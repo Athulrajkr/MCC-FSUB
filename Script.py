@@ -211,7 +211,7 @@ IMDb Data:
 🎭 Genres: {genres}
 📆 Year: <a href={url}/releaseinfo>{year}</a>
 🌟 Rating: <a href={url}/ratings>{rating}</a> / 10
-🕵‍♂ 𝐂𝐎𝐌𝐏𝐋𝐀𝐈𝐍𝐓𝐒 👉 @MMAssistBot</b>"""
+🕵‍♂ 𝐂𝐎𝐌𝐏𝐋𝐀𝐈𝐍𝐓𝐒 👉 @MccAssistBot</b>"""
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
     
