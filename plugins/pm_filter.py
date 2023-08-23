@@ -1224,7 +1224,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="http://t.me/MMAssistBot")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/MccAssistBot")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
