@@ -11,8 +11,8 @@ async def approve(bot: Client, m: Message):
     date = m.date
     btn = [
         [
-            InlineKeyboardButton('🎥 𝐆𝐫𝐨𝐮𝐩 🎥', url='https://t.me/MM_Archives'),
-            InlineKeyboardButton('🎥 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎥', url='http://t.me/Movie_Meadia')
+            InlineKeyboardButton('🎥 𝐆𝐫𝐨𝐮𝐩 🎥', url='t.me/MCC_OTT'),
+            InlineKeyboardButton('🎥 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎥', url='t.me/Movie_Collections_Channel')
         ]]
     try:
         if m.chat.id != AUTH_CHANNEL:
