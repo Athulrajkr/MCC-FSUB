@@ -6,11 +6,11 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
-✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/MMAssistBot'>𝐌𝐌 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭</a>
+✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/MccAssistBot'>𝐌𝐌 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭</a>
 ✯ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
 ✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
 ✯ DᴀᴛᴀBᴀsᴇ: <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
-✯ Bᴏᴛ Sᴇʀᴠᴇʀ: <a href='https://t.me/MM_Rockers'>𝑯𝒆𝒓𝒐𝒌𝒖</a>
+✯ Bᴏᴛ Sᴇʀᴠᴇʀ: <a href='https://t.me/MCC_OTT'>𝑯𝒆𝒓𝒐𝒌𝒖</a>
 ✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.7.1 [ Sᴛᴀʙʟᴇ ]</b>"""
 
     SOURCE_TXT = """<b>ɴᴏᴛᴇ:
@@ -146,7 +146,7 @@ Nᴀᴍᴇ - {}"""
 <b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
     
 • ꜰᴜʟʟ ɴᴀᴍᴇ : 𝐌𝐌 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭
-• ᴜꜱᴇʀɴᴀᴍᴇ : @MMAssistBot</b>"""
+• ᴜꜱᴇʀɴᴀᴍᴇ : @MccAssistBot</b>"""
 
     REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
