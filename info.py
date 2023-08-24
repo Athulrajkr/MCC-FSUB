@@ -24,7 +24,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', 'https://graph.org/file/d4ecf1bd46b54316b95ea.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/82d3e11dbe63f2b85b5b1.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/45355c19581818b68ba62.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/5c4f6a8d54b6af560d92a.jpg")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
